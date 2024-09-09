@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum veritatis voluptatem sapiente est minima labore ea adipisci tempore laudantium perspiciatis sit facere dolorum magni eius impedit modi, in, necessitatibus aut fugiat. Vel fuga esse incidunt ea officia rem ut facere voluptates fugiat ex nesciunt numquam tempora eos consectetur, dolorem ipsa! Eaque maxime dignissimos accusamus eligendi magni quisquam sequi quaerat, fuga suscipit ad iusto sint saepe impedit natus aperiam possimus molestias rerum harum repellendus inventore consequuntur! Placeat incidunt, ad neque itaque corrupti doloribus, a fugiat, amet natus voluptates repellendus dolores?</p>
+    <hr>
+    <a href="info.html" target = "_blank">another page</a>
+    <hr>
+    <form action="/arnab-me">
+        EMIAL: <input type = "text" placeholder="@gmail.com"name = "email" required = "true">
+        PASSWORD: <input type = "password" placeholder="password"name = "password" required = "true"><br>
+        <input type="submit">
+    </form><hr>
+    <form action="/arnab-me">
+        <label for = "email"> EMIAL:</label>
+       <input type = "text" id = "email"placeholder="@gmail.com"name = "email" required = "true">
+       <label for = "password">PASSWORD:</label>
+        PASSWORD: <input type = "password" id = "password"placeholder="password"name = "password" required = "true"><br>
+        <input type="submit">
+    </form><hr>
+    <form action="/arnab-me">
+        <label fpr = "date">Birth Date</label> 
+        <input type = "date" id = "date"name = "birthdate" required = "ture"><br>
+        <label for = "file">Attach file</label>
+        <input type="file" id="file" name="attachment" required="true"><br>
+        <label for ="color">Color for your car</label>
+        <input type="color" id="color" name="car-color"><br>
+        <label for="range">Car price</label>
+        <input type="range" id="range" name="pricerange" min="100" max="10000" value="50" oninput="updateValue(this.value)">
+        <span id="rangeValue">50</span><br>
+        <label for="tel">Tel</label>
+        <input type="tel" id="tel" name="phone-number" pattern="[0-9]{10}" maxlength = "10" required><br>
+        pokeme:<input type="button" value = "poked"><br> 
+        <input type="submit">
+        <hr>
+    </form>
+        <form action="/arnab.com">
+            <label for = "search">Serach Box:</label>
+            <input type="search" id="search" name="search-query" required="true"><br>
+            <label for="male">Male</label>
+            <input type = "radio" id = "male"name=" gender" value = "male"><br>
+            <label for = "female">Feale</label>
+            <input type = "radio" id = "female" name=" gender" value = "female"><br>
+            <label >Other</label>
+            <input type = "radio" name=" gender" value = "other"><br>
+        </form><hr>
+        <form action="/arnab-me">
+            <label for="c">C</label>
+            <input type="checkbox" id="c" name="c" value="c"><br>
+            <label for="java">Java</label>
+            <input type="checkbox" id="java" name="java" value="java"><br>
+            <label for="python">Python</label>
+            <input type="checkbox" id="python" name="python" value="python"><br>
+        </form>
+        <hr>
+        <form>
+            <label for="value">What is your rank:</label>
+            <select id = "value" name = "rank">
+                <option value = "1">First</option>
+                <option value = "2">Second</option>
+                <option value = "3">Third</option>
+            </select>
+        </form>
+        <textarea rows = "4" cols ="50">
+                default text
+        </textarea><br>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/rklidcZ-aLU?si=asg1st2IpwuONGM6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen> HTML video</iframe>
+</body>
+</html>
